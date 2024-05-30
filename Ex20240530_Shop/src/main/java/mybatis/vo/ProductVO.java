@@ -64,6 +64,8 @@ public class ProductVO {
 
 	public void setQuant(int quant) {
 		this.quant = quant;
+		// 수량이 변경되면 총액도 변한다.
+		totalprice = quant * p_saleprice;
 	}
 
 	public void setTotalprice(int totalprice) {
@@ -122,6 +124,13 @@ public class ProductVO {
 		return totalprice;
 	}
 	
+	// 할인율
+	public String getPercent() {
+		int per = (p_price-p_saleprice) * 100 / p_price;
+		
+		return String.valueOf(per);
+		
+	}
 	
 	
 }

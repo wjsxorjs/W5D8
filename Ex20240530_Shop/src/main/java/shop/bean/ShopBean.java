@@ -43,6 +43,7 @@ public class ShopBean {
 	// 카테고리별로 검색된 제품들을 DAO로부터 받아 p_list에 저장한다.
 	public void searchProduct() {
 		// 이미 카테고리는 특정 값이 들어가 있는 상태다.
+//		System.out.println("ASSASASASASASASASASASAS");
 		p_list = ShopDAO.getList(category);
 	}
 	
