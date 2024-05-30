@@ -9,6 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 
 
+
 public class FactoryService {
 	private static SqlSessionFactory factory;
 	static {
