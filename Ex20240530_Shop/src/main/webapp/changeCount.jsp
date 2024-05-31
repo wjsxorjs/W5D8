@@ -7,10 +7,15 @@
 
 <%
 	String pnum = request.getParameter("p_num");
-	int q = Integer.parseInt(request.getParameter("count"));
-	if(pnum != null && q >0){
-		cart.changeCount(pnum, q);
-		response.sendRedirect("cartList.jsp");
+	String count = request.getParameter("count");
+	if(pnum != null && count != null){
+		int q = Integer.parseInt(count);
+		if(q<1){
+			cart.delProduct(pnum);
+		} else{
+			cart.changeCount(pnum, q);
+		}
 	}
+	response.sendRedirect("cartList.jsp");
 
 %>

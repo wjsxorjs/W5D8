@@ -9,7 +9,7 @@
 	String pnum = request.getParameter("p_num");
 	if(pnum != null){
 		cart.delProduct(pnum);
-		response.sendRedirect("cartList.jsp");
 	}
+	response.sendRedirect("cartList.jsp");
 
 %>
