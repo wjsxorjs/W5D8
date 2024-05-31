@@ -65,7 +65,7 @@
 			<!------------------>
 
 			</td>
-			<td></td>
+			<td><%=vo.getTotalprice() %>원</td>
 			<td>
 			<input type="button" value="삭제" 
 			style="border:1 solid black;cursor:pointer" 

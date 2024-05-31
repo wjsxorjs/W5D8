@@ -5,11 +5,22 @@
 	color: maroon;
 }
 
-.txt_c{
-	text-align: center;
-	position: fixed;
-	}
+table.table{
+	border-collapse: collapse;
+	width: 600px;
+	margin: 0 auto;
+}
+
+table.table th, table.table td{
+	border: 1px solid navy;
+	padding: 4px;
+	font-size: 11px;
+}
 	
+input[type="number"]{
+	width: 30px;
+}
+
 a:link{
 	text-decoration:none; 
 	color:navy;
@@ -25,21 +36,7 @@ a:hover{
 	color:red;
 }
 
-table.table{
-	border-collapse: collapse;
-	width: 600px;
-	margin: 0 auto;
-}
 
-table.table th, table.table td{
-	border: 1px solid navy;
-	padding: 4px;
-	font-size: 11px;
-}
-
-input[type="number"]{
-	width: 30px;
-}
 
 .txt_c{
 	text-align: center;
